@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GRC 365 Making Tables</title>
+<style>
+	body {
+		background: whitesmoke;
+	} div {
+		width: 800px;
+		height: 800px;
+		background: white;
+		border: 1px solid dimgray;
+		margin: 24px auto;
+		display: grid;
+		grid-template: repeat(2,auto) /repeat(2,auto);
+	} div div {
+		font: 72pt/1.4em Roboto;
+	} div div:nth-child(1) {
+		background: lightblue;
+		display: none;
+	} div div:nth-child(2) {
+		background: lightgreen;
+		grid-area: 1/2/3/3;
+	} div div:nth-child(3) {
+		background: lavender;
+	} div div:nth-child(4) {
+		background: pink;
+		// display: none;
+		grid-area: 1/1/;
+	}
+</style>
+</head>
+
+<body>
+	<div id="div">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+	</div>
+</body>
+</html>
